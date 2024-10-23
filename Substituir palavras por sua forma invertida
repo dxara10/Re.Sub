@@ -1,0 +1,9 @@
+import re
+
+texto = 'Python é uma linguagem de programação.'
+
+def invert_palavra(match):
+    return match.group()[::-1]
+
+novo_texto = re.sub(r'\b\w+\b', invert_palavra, texto)
+print("Novo texto:", novo_texto)
