@@ -1,0 +1,6 @@
+import re
+
+texto = 'Este é um Exemplo De TEXTO com Letras Maiúsculas.'
+
+novo_texto = re.sub(r'[A-Z]', 'X', texto)
+print("Novo texto:", novo_texto)
