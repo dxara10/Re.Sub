@@ -1,0 +1,6 @@
+import re
+
+texto = 'Hoje é 25/12/2023 e amanhã será 26/12/2023.'
+
+novo_texto = re.sub(r'\b\d{2}/\d{2}/\d{4}\b', 'DATA', texto)
+print("Novo texto:", novo_texto)
