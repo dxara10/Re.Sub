@@ -1,0 +1,7 @@
+import re
+
+padrao = r'gato'
+texto = 'Eu tenho um gato preto e um gato branco.'
+
+novo_texto = re.sub(padrao, 'cachorro', texto)
+print("Novo texto:", novo_texto)
