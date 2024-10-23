@@ -1,0 +1,6 @@
+import re
+
+texto = 'Este é um exemplo de texto com letras minúsculas.'
+
+novo_texto = re.sub(r'[a-z]', lambda x: x.group(0).upper(), texto)
+print("Novo texto:", novo_texto)
